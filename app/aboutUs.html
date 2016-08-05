@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="/app/node_modules/angular/angular.js"></script>
+		<script src="/app/node_modules/jquery/dist/jquery.js"></script>
+		<script src="/app/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="/app/aboutUsController.js"></script>
+		<script src="/app/mainModule.js"></script>
+		<link rel="stylesheet" href="/app/node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="/assets/css/site.css"/>		
+	</head>
+	<body ng-app="mainModule" ng-controller="aboutUsController">
+		<p> {{"::company.name" + " " + "::company.street" + " " }} </p>
+	</body>
+		
+</html>
