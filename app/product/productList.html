@@ -73,18 +73,7 @@
           <h1>Meat/Poultry</h1>
           <p>Prepared meats</p>
           
-			<!--<select ng-options="product in products" ng-model='category' name="category" id="category">
-				<option value="">All categories</option>
-			</select> -->
-			<!--<select ng-model='product' name="product" id="product">
-				<!--<option value="">All products</option>
-			<option ng-repeat="product in products"  value="{{products.productID}}>{{products.productName}}></option>
-				<div class="item text-center" class="{'active':$first}"><a ng-href="/app/product/productDetail.html#/{{product.productID}}"></a></div>
-				<div class="col-sm-2"" src ="/assets/img/ProductImages/{{products.productID}}.jpg"></div>
-				<div class="col-sm-5"><a href="/app/product/productDetail.html#/{{products.productName}}"></a></div>
-				<div class="col-sm-3">{{products.quantityPerUnit}}</div>
-				<div class="col-sm-3"> {{ products.unitPrice }}</div>
-			</select></div>-->
+			
 		<div class="row"  ng-repeat="product in products | filter: {categoryID: category.categoryID}:true">
 			<div class="col-sm-2"><a href="/app/product/productDetail.html"><img class="img-responsive" ng-src="/assets/img/ProductImages/{{product.productID}}.jpg"></a></div>
             <div class="col-sm-5"><a href="/app/product/productDetail.html">{{product.productName}}</a></div>
